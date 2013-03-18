@@ -1,4 +1,0 @@
-JWD
-===
-
-Java Web Application
