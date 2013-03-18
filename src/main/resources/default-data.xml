@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+
+	<table name="role">
+        <column>id</column>
+        <column>name</column>
+        <row>
+            <value description="id">1</value>
+            <value description="name">ROLE_ADMIN</value>
+        </row>
+        <row>
+            <value description="id">2</value>
+            <value description="name">ROLE_NORMAL</value>
+        </row>
+    </table>
+    
+    <table name="users">
+        <column>id</column>
+        <column>username</column>
+        <column>password</column>
+        <column>first_name</column>
+        <column>last_name</column>
+        <column>email</column>
+        <column>enabled</column>
+        <column>role_id</column>
+        <row>
+            <value description="id">1</value>
+            <value description="username">user</value>
+            <value description="password">b6b1f4781776979c0775c71ebdd8bdc084aac5fe</value>
+            <value description="first_name">Normal</value>
+            <value description="last_name">User</value>
+            <value description="email">test_user@yahoo.com</value>
+            <value description="enabled">T</value>
+            <value description="role_id">2</value>
+        </row>
+        <row>
+            <value description="id">2</value>
+            <value description="username">admin</value>
+            <value description="password">a40546cc4fd6a12572828bb803380888ad1bfdab</value>
+            <value description="first_name">Admin</value>
+            <value description="last_name">User</value>
+            <value description="email">admin_user@gmail.com</value>
+            <value description="enabled">T</value>
+            <value description="role_id">1</value>
+        </row>
+    </table>
+</dataset>

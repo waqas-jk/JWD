@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+  <definition name="baseLayout" template="/WEB-INF/pages/baseLayout.jsp">
+      <put-attribute name="header" value="/common/header.jsp"/>
+      <put-attribute name="menu"   value="/common/menu.jsp"/>
+      <put-attribute name="footer"   value="/common/footer.jsp"/>
+  </definition>
+
+  <definition name="simpleLayout" template="/WEB-INF/pages/simpleLayout.jsp">
+      <put-attribute name="header" value="/common/header.jsp"/>
+      <put-attribute name="footer"   value="/common/footer.jsp"/>
+  </definition>
+  
+  <definition name="main.menu" extends="baseLayout">
+      <put-attribute name="body"   value="/WEB-INF/pages/mainMenu.jsp"/>      
+  </definition>
+  
+  <definition name="data.access.exception" extends="simpleLayout">
+      <put-attribute name="body"   value="/WEB-INF/pages/dataAccessFailure.jsp"/>      
+  </definition>
+  
+  <definition name="edit.user" extends="baseLayout">
+      <put-attribute name="body"   value="/WEB-INF/pages/userForm.jsp"/>      
+  </definition>
+  
+    <definition name="user.list" extends="baseLayout">
+      <put-attribute name="title"  value="Users"/>
+      <put-attribute name="body"   value="/WEB-INF/pages/admin/userList.jsp"/>      
+  </definition>
+  
+  <definition name="login" extends="simpleLayout">
+      <put-attribute name="title"  value="Login"/>
+      <put-attribute name="body"   value="/WEB-INF/pages/login.jsp"/>      
+  </definition>
+  
+   <definition name="error" extends="simpleLayout">
+     <put-attribute name="title"  value="Error"/>
+     <put-attribute name="body"   value="/WEB-INF/pages/error.jsp"/>      
+  </definition>
+  
+    <definition name="error.403" extends="simpleLayout">
+     <put-attribute name="title"  value="403"/>
+     <put-attribute name="body"   value="/WEB-INF/pages/403.jsp"/>      
+  </definition>
+  
+    <definition name="error.404" extends="simpleLayout">
+     <put-attribute name="body"   value="/WEB-INF/pages/404.jsp"/>      
+  </definition>
+  
+</tiles-definitions>
