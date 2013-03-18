@@ -1,4 +1,27 @@
-JWD
-===
+Java Web Application - Assignment
+==================================
 
-Java Web Application
+How to run:
+============
+
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+
+
+How to build project:
+======================
+
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
